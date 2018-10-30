@@ -40,7 +40,7 @@ class Percolation {
   /**
    * Constructs the object.
    *
-   * @param      n     { parameter_description }
+   * @param      num     { parameter_description }
    */
   Percolation(final int num) {
         this.arrSize = num;
@@ -156,7 +156,7 @@ public final class Solution {
      *
      * @param args String
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int vertices = Integer.parseInt(sc.nextLine());
         Percolation obj = new Percolation(vertices);
