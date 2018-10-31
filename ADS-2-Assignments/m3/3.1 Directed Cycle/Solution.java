@@ -1,9 +1,20 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
-
+		// Blank constructor.
 	}
-	public static void main(String[] args) {
+	/**
+	 * main method for performing operations.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int numOfVertices = Integer.parseInt(sc.nextLine());
 		int numOfEdges = Integer.parseInt(sc.nextLine());
