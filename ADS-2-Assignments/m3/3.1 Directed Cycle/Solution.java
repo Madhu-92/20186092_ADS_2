@@ -16,6 +16,8 @@ class Solution {
 		}
 		DirectedCycle dcObj = new DirectedCycle(dgObj);
 		if (dcObj.hasCycle()) {
+			System.out.println("Cycle exists.");
+		} else {
 			System.out.println("Cycle doesn't exists.");
 		}
 	}
