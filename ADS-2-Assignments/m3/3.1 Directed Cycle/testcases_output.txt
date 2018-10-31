@@ -3,9 +3,7 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -13,9 +11,7 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -23,9 +19,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+Cycle doesn't exists
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -33,9 +27,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+Cycle doesn't exists
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -43,9 +35,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+Cycle doesn't exists
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -53,9 +43,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+Cycle doesn't exists
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -63,9 +51,7 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -73,8 +59,6 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:12)
+Cycle doesn't exists
 ----------------------------------------
 

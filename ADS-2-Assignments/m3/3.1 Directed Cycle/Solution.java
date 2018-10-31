@@ -11,9 +11,9 @@ class Solution {
 		while (numOfEdges > 0) {
 			String[] connectedVertices = sc.nextLine().split(" ");
 			dgObj.addEdge(Integer.parseInt(connectedVertices[0]),
-				          Integer.parseInt(connectedVertices[1]));
+			              Integer.parseInt(connectedVertices[1]));
+			numOfEdges--;
 		}
-		numOfEdges--;
 		DirectedCycle dcObj = new DirectedCycle(dgObj);
 		if (dcObj.hasCycle()) {
 			System.out.println("Cycle doesn't exists");
