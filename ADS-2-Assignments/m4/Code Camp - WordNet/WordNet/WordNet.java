@@ -27,7 +27,7 @@ public class WordNet {
         In inObj = new In(hypernyms);
         while (!inObj.isEmpty()) {
             String[] tokens = inObj.readString().split(",");
-            for (int i = 0; i < tokens.length; i++) {
+            for (int i = 1; i < tokens.length; i++) {
                 diObj.addEdge(Integer.parseInt(tokens[0]),
                               Integer.parseInt(tokens[1]));
             }
