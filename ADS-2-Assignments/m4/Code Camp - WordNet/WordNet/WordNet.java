@@ -29,7 +29,7 @@ public class WordNet {
             String[] tokens = inObj.readString().split(",");
             for (int i = 1; i < tokens.length; i++) {
                 diObj.addEdge(Integer.parseInt(tokens[0]),
-                              Integer.parseInt(tokens[1]));
+                              Integer.parseInt(tokens[i]));
             }
         }
 
