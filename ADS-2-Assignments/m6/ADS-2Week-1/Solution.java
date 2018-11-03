@@ -3,15 +3,24 @@ import java.util.Scanner;
  * Class for page rank.
  */
 class PageRank {
+    /**
+     * pagerank variable.
+     */
     private double[] pageRank;
+    /**
+     * prevrank variable.
+     */
     private double[] prevRank;
+    /**
+     * graph.
+     */
     private Digraph graph;
     /**
      * Constructs the object.
      *
      * @param      graph  The graph
      */
-    PageRank(Digraph graph) {
+    PageRank(final Digraph graph) {
         this.graph = graph;
         int vertices = graph.V();
         for (int i = 0; i < vertices; i++) {
@@ -41,7 +50,7 @@ public class Solution {
     /**
      * Constructs the object.
      */
-    protected Solution () {
+    protected Solution() {
         // Blank Constructor.
     }
     /**
@@ -65,9 +74,9 @@ public class Solution {
         // pageObj.add();
         System.out.println(pageObj.toString());
         // read the first line of the input to get the number of vertices
-        // iterate count of vertices times 
+        // iterate count of vertices times
         // to read the adjacency list from std input
-        // and build the graph  
+        // and build the graph
         // Create page rank object and pass the graph object to the constructor
         // print the page rank object
         // This part is only for the final test case
