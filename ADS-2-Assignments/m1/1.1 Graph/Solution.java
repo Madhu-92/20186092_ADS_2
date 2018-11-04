@@ -139,7 +139,7 @@ class MatrixGraph {
      * Constructs the object.
      */
     MatrixGraph() {
-    	// Blank constructor.
+        // Blank constructor.
     }
     /**
      * Constructs the object.
@@ -217,7 +217,7 @@ final class Solution {
      * Constructs the object.
      */
     private Solution() {
-    	// Blank constructor
+        // Blank constructor
     }
     /**
      * this method performs the operations.
