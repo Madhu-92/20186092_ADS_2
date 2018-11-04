@@ -46,31 +46,6 @@ Audit done.
 Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:13:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:27:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:38:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:41: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:42:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:51: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:52:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:71: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:72:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:73:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:74:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:75:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:76:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:79:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:91:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:101:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:104:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:125: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:126:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:129: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:130:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:142:5: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 2 errors.

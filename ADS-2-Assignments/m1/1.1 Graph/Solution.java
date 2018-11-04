@@ -3,13 +3,34 @@ import java.util.Scanner;
  * Class for list graph.
  */
 class ListGraph {
+    /**
+     * num of vertices.
+     */
     private int vertices;
+    /**
+     * num of edges.
+     */
     private int edges;
+    /**
+     * bag of adjacent values.
+     */
     private Bag<Integer>[] adjacent;
+    /**
+     * input strings.
+     */
     private String[] tokens;
+    /**
+     * Constructs the object.
+     */
     ListGraph() {
 
     }
+    /**
+     * Constructs the object.
+     * Time complexity of this method is O(N)
+     *
+     * @param      sc The scan
+     */
     ListGraph(final Scanner sc) {
         this.vertices = Integer.parseInt(sc.nextLine());
         adjacent = (Bag<Integer>[]) new Bag[vertices];
@@ -23,7 +44,14 @@ class ListGraph {
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
     }
-
+    /**
+     * addedge method.
+     * Time complexity of this method is O(N)
+     *
+     *
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
+     */
     public void addEdge(final int vertexOne, final int vertexTwo) {
         if (vertexOne == vertexTwo) {
             return;
@@ -34,11 +62,26 @@ class ListGraph {
         adjacent[vertexOne].add(vertexTwo);
         adjacent[vertexTwo].add(vertexOne);
     }
-
+    /**
+     * this method returns the iterable.
+     *
+     * @param      vertex  The vertex
+     *
+     * @return     the iterable
+     */
     public Iterable<Integer> adj(final int vertex) {
         return adjacent[vertex];
     }
-    
+    /**
+     * checks for an edge.
+     * Time complexity of this method is O(N)
+     *
+     *
+     * @param      vertexOne  The vertex one
+     * @param      vertexTwo  The vertex two
+     *
+     * @return     True if has edge else False.
+     */
     public boolean hasEdge(final int vertexOne,
                            final int vertexTwo) {
         for (int each : adj(vertexOne))  {
@@ -48,7 +91,12 @@ class ListGraph {
         }
         return false;
     }
-    
+    /**
+     * Returns a string representation of the object.
+     * Time complexity of this method is O(N)
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder str = new StringBuilder();
         str.append(vertices + " vertices, " + edges + " edges" + "\n");
@@ -67,15 +115,37 @@ class ListGraph {
         }
     }
 }
-
+/**
+ * Class for matrix graph.
+ */
 class MatrixGraph {
+    /**
+     * tokens array.
+     */
     private String[] tokens;
+    /**
+     * graphMatrix array.
+     */
     private int[][] graphMatrix;
+    /**
+     * num of vertices.
+     */
     private int vertices;
+    /**
+     * num of edges.
+     */
     private int edges;
+    /**
+     * Constructs the object.
+     */
     MatrixGraph() {
-
+    	// Blank constructor.
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      sc  The scan
+     */
     MatrixGraph(final Scanner sc) {
         this.vertices = Integer.parseInt(sc.nextLine());
         graphMatrix = new int[vertices][vertices];
@@ -88,6 +158,13 @@ class MatrixGraph {
         }
 
     }
+    /**
+     * adds an edge.
+     * Time complexity of this method is O(N)
+     *
+     * @param      vertexOne     vertexOne
+     * @param      vertexTwo     vertexTwo
+     */
     public void addEdge(final int vertexOne, final int vertexTwo) {
         if (vertexOne != vertexTwo) {
             if (!hasEdge(vertexOne, vertexTwo)) {
@@ -98,9 +175,23 @@ class MatrixGraph {
         }
 
     }
+    /**
+     * checks for an edge.
+     * Time complexity of this method is O(N)
+     *
+     * @param      vertexOne     vertexOne
+     * @param      vertexTwo     vertexTwo
+     *
+     * @return     True if has edge else False.
+     */
     public boolean hasEdge(final int vertexOne, final int vertexTwo) {
         return graphMatrix[vertexOne][vertexTwo] == 1;
     }
+    /**
+     * prints all values.
+     * Time complexity of this method is O(N)
+     *
+     */
     public void print() {
         String str = "";
         str += vertices + " vertices, " + edges + " edges" + "\n";
@@ -122,11 +213,17 @@ class MatrixGraph {
  * Class for solution.
  */
 final class Solution {
-    
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-
+    	// Blank constructor
     }
- 
+    /**
+     * this method performs the operations.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String type = sc.nextLine();
