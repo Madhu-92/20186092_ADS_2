@@ -45,7 +45,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 12 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m1\1.1 Graph\Solution.java:142:5: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
