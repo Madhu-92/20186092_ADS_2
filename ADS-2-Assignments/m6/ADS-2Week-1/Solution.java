@@ -1,58 +1,120 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for page rank.
  */
 class PageRank {
     /**
-     * pagerank variable.
+     * array for the page ranks.
      */
-    private double[] pageRank;
+    double[] pageRank;
     /**
-     * prevrank variable.
+     * digraph onject.
      */
-    private double[] prevRank;
+    Digraph graph;
     /**
-     * graph.
+     * previous ranks array.
      */
-    private Digraph graph;
+    double[] prevRank;
+    Digraph revGraph;
     /**
      * Constructs the object.
+     * Time complexities is O(V)
+     * V is number of vertices.
      *
-     * @param      graph  The graph
+     * @param      g     digraph object.
      */
-    PageRank(final Digraph graph) {
-        this.graph = graph;
+    PageRank(final Digraph g) {
+        graph = g;
         int vertices = graph.V();
+        pageRank = new double[vertices];
+        prevRank = new double[vertices];
         for (int i = 0; i < vertices; i++) {
-            pageRank[i] = 1 / vertices;
+            pageRank[i] = 1.0 / vertices;
         }
-    }
-}
-/**
- * Class for web search.
- */
-class WebSearch {
-    /**
-     * Constructs the object.
-     *
-     * @param      pr    { parameter_description }
-     * @param      file  The file
-     */
-    WebSearch(final PageRank pr, final String file) {
+        for (int i = 0; i < vertices; i++) {
+            if (graph.outdegree(i) == 0) {
+                for (int j = 0; j < vertices; j++) {
+                    if (j != i) {
+                        graph.addEdge(i, j);
+                    }
+                }
+            }
+        }
+        // values = new Double[graph.V()];
+        for (int i = 0; i < 1000; i++) {
+            for (int j = 0; j < vertices; j++) {
+                getPR(j);
+            }
+            pageRank = Arrays.copyOf(prevRank, prevRank.length);
+        }
 
     }
+    /**
+     * Gets the pr.
+     * Time complexities is O(E).
+     * E is number of adjacent values to that vertex.
+     *
+     * @param      vertex  The vertex
+     *
+     * @return     The pr.
+     */
+    public double getPR(final int vertex) {
+        double sum = 0;
+        // int[] values = new int[graph.V()];
+        if (graph.indegree(vertex) == 0) {
+            prevRank[vertex] = 0;
+            return prevRank[vertex];
+        }
+        for (int v : graph.reverse().adj(vertex)) {
+            sum += (pageRank[v] / graph.outdegree(v));
+        }
+        prevRank[vertex] = sum;
+        return prevRank[vertex];
+    }
+
+
+    /**
+     * this method to perform to add the pagerank to that vertex.
+     * time complexity is O(V*1000)
+     * V is number of vertices.
+     */
+    public void add() {
+        for (int i = 0; i < 1000; i++) {
+            for (int j = 0; j < graph.V(); j++) {
+                prevRank[j] = pageRank[j];
+                pageRank[j] = getPR(j);
+                // if(prevRank[j] == pageRank[j]){
+                //  break;
+                // }
+            }
+        }
+    }
+    /**
+     * Returns a string representation of the object.
+     * Time complexity is O(V).
+     * V is number of vertices
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        String str = "";
+        for (int i = 0; i < graph.V(); i++) {
+            str += i + " - " + pageRank[i] + "\n";
+        }
+        return str;
+    }
+
+}
+
+class WebSearch {
+
 }
 
 /**
  * Class for solution.
  */
 public class Solution {
-    /**
-     * Constructs the object.
-     */
-    protected Solution() {
-        // Blank Constructor.
-    }
     /**
      * main method to perform operations.
      *
@@ -73,22 +135,32 @@ public class Solution {
         PageRank pageObj = new PageRank(graph);
         // pageObj.add();
         System.out.println(pageObj.toString());
+        // while (scan.hasNext()) {
+
+        // }
         // read the first line of the input to get the number of vertices
+
         // iterate count of vertices times
         // to read the adjacency list from std input
         // and build the graph
+
+
         // Create page rank object and pass the graph object to the constructor
+
         // print the page rank object
+
         // This part is only for the final test case
+
         // File path to the web content
         String file = "WebContent.txt";
+
         // instantiate web search object
-        // and pass the page rank object
-        // and the file path to the constructor
+        // and pass the page rank object and the file path to the constructor
+
         // read the search queries from std in
         // remove the q= prefix and extract the search word
         // pass the word to iAmFeelingLucky method of web search
         // print the return value of iAmFeelingLucky
+
     }
 }
-

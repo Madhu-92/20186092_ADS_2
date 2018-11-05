@@ -283,9 +283,18 @@ Starting audit...
 Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:23:28: 'graph' hides a field. [HiddenField]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:10:14: Variable 'pageRank' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:14:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:18:14: Variable 'prevRank' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:19:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:19:13: Variable 'revGraph' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:45:29: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:83:29: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:110: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Solution.java:117:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
