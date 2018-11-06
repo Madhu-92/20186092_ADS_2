@@ -1,5 +1,18 @@
+/**
+ * Class for solution.
+ */
 public class Solution {
-
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		// Blank Constructor.
+	}
+	/**
+	 * Main method to perform operations.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		In inObj = new In();
 		String file1 = inObj.readLine();
