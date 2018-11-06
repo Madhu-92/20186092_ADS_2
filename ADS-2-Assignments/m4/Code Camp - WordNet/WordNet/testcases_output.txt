@@ -222,34 +222,20 @@ Caused by: java.lang.ClassNotFoundException: SAP
 	... 2 more
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: SAP
-	at WordNet.<init>(WordNet.java:38)
-	at Solution.main(Solution.java:25)
-Caused by: java.lang.ClassNotFoundException: SAP
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 2 more
+IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: SAP
-	at WordNet.<init>(WordNet.java:38)
-	at Solution.main(Solution.java:25)
-Caused by: java.lang.ClassNotFoundException: SAP
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
-	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 2 more
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
