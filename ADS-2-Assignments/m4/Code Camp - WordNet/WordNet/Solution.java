@@ -7,8 +7,8 @@ public class Solution {
 		String type = inObj.readLine();
 		try {
 			if (type.equals("Graph")) {
-				WordNet wordnetObj = new WordNet(file1, file2);
-				wordnetObj.display();
+				WordNet wordnet = new WordNet(file1, file2);
+				wordnet.display();
 				return;
 			}
 		} catch (Exception e) {
