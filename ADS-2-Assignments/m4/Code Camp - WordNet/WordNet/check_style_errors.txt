@@ -448,17 +448,9 @@ Audit done.
 Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:16:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:36: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:38: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:40: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:41: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:43: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:44: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Solution.java:4: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
