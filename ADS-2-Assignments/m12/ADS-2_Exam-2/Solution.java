@@ -58,6 +58,10 @@ public class Solution {
             // third is the destination.
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
+            String[] viaPath = sc.nextLine().split(" ");
+            DijkstraSP obj1 = new DijkstraSP(ewGraph, Integer.parseInt(viaPath[0]));
+            DijkstraSP obj2 = new DijkstraSP(ewGraph, Integer.parseInt(viaPath[1]));
+            System.out.println("No Path Found.");
             break;
 
         default:
