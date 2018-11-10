@@ -40,6 +40,8 @@ public class Solution {
             DijkstraSP dObj = new DijkstraSP(ewGraph, Integer.parseInt(dPath[0]));
             if(dObj.hasPathTo(Integer.parseInt(dPath[1]))) {
                 System.out.println(dObj.distTo(Integer.parseInt(dPath[1])));
+            } else {
+                System.out.println("No Path Found.");
             }
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.

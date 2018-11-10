@@ -79,9 +79,9 @@ Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:29: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:41:15: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:51: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:52: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:46: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:53: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:54: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 14 errors.
 Starting audit...
