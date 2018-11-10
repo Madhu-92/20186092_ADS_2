@@ -1,6 +1,19 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 public class Solution {
-
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+		// Blank constructor.
+	}
+	/**
+	 * Main method to perform operations.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
@@ -23,6 +36,11 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
+			String[] dPath = sc.nextLine().split(" ");
+            DijkstraSP dObj = new DijkstraSP(ewGraph, Integer.parseInt(dPath[0]));
+            if(dObj.hasPathTo(Integer.parseInt(dPath[1]))) {
+                System.out.println(dObj.distTo(Integer.parseInt(dPath[1])));
+            }
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.

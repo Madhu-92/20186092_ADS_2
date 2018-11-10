@@ -1,92 +1,81 @@
-public class Edge implements Comparable<Edge> { 
-
-    private final int v;
-    private final int w;
-    private final double weight;
-
+/**
+ * Class for edge.
+ */
+class Edge implements Comparable<Edge> {
     /**
-     * Initializes an edge between vertices {@code v} and {@code w} of
-     * the given {@code weight}.
-     *
-     * @param  v one vertex
-     * @param  w the other vertex
-     * @param  weight the weight of this edge
-     * @throws IllegalArgumentException if either {@code v} or {@code w} 
-     *         is a negative integer
-     * @throws IllegalArgumentException if {@code weight} is {@code NaN}
+     * first vertex to connect.
      */
-    public Edge(int v, int w, double weight) {
-        if (v < 0) throw new IllegalArgumentException("vertex index must be a nonnegative integer");
-        if (w < 0) throw new IllegalArgumentException("vertex index must be a nonnegative integer");
-        if (Double.isNaN(weight)) throw new IllegalArgumentException("Weight is NaN");
-        this.v = v;
-        this.w = w;
-        this.weight = weight;
-    }
-
+    private int vertexOne;
     /**
-     * Returns the weight of this edge.
-     *
-     * @return the weight of this edge
+     * second vertex connect from first one.
      */
-    public double weight() {
-        return weight;
-    }
-
+    private int vertexTwo;
     /**
-     * Returns either endpoint of this edge.
+     * weight of the edge.
+     */
+    private double weight;
+    /**
+     * Constructs the object.
      *
-     * @return either endpoint of this edge
+     * @param      v     first vertex
+     * @param      w     second vertex
+     * @param      wei   The weight
+     */
+    Edge(final int v, final int w, final double wei) {
+        this.vertexOne = v;
+        this.vertexTwo = w;
+        this.weight = wei;
+    }
+    /**
+     * returns first end of edge.
+     *
+     * @return     returns first end of edge.
      */
     public int either() {
-        return v;
+        return vertexOne;
     }
-
     /**
-     * Returns the endpoint of this edge that is different from the given vertex.
+     * returns other end of edge.
      *
-     * @param  vertex one endpoint of this edge
-     * @return the other endpoint of this edge
-     * @throws IllegalArgumentException if the vertex is not one of the
-     *         endpoints of this edge
+     * @param      v     connected vertex.
+     *
+     * @return      returns other end of edge.
      */
-    public int other(int vertex) {
-        if      (vertex == v) return w;
-        else if (vertex == w) return v;
-        else throw new IllegalArgumentException("Illegal endpoint");
+    public int other(final int v) {
+        if (vertexOne == v) {
+            return vertexTwo;
+        }
+        return vertexOne;
     }
-
     /**
-     * Compares two edges by weight.
-     * Note that {@code compareTo()} is not consistent with {@code equals()},
-     * which uses the reference equality implementation inherited from {@code Object}.
+     * compares both edges weight.
      *
-     * @param  that the other edge
-     * @return a negative integer, zero, or positive integer depending on whether
-     *         the weight of this is less than, equal to, or greater than the
-     *         argument edge
+     * @param      that  The that
+     *
+     * @return     returns integer value.
      */
-    @Override
-    public int compareTo(Edge that) {
-        return Double.compare(this.weight, that.weight);
+    public int compareTo(final Edge that) {
+        if (this.weight < that.weight) {
+            return -1;
+        } else if (this.weight > that.weight) {
+            return 1;
+        }
+        return 0;
     }
-
     /**
-     * Returns a string representation of this edge.
+     * Gets the weight.
      *
-     * @return a string representation of this edge
+     * @return     The weight.
+     */
+    public double getWeight() {
+        return this.weight;
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
-        return String.format("%d-%d %.5f", v, w, weight);
+        return String.format("%d-%d %.5f", vertexOne, vertexTwo, weight);
     }
-
-    // /**
-    //  * Unit tests the {@code Edge} data type.
-    //  *
-    //  * @param args the command-line arguments
-    //  */
-    // public static void main(String[] args) {
-    //     Edge e = new Edge(12, 34, 5.67);
-    //     StdOut.println(e);
-    // }
 }
