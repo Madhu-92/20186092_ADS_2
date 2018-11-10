@@ -70,20 +70,11 @@ Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:17:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:24: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:25:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:25:52: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:28: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:29: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:41:15: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:46: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:53: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:54: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:43:15: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:45:36: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:57: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
