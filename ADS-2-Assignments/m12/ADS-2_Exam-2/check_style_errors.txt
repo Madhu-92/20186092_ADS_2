@@ -48,7 +48,7 @@ Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:12:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:12:52: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:15: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:16: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:16: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:26: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 110). [LineLength]

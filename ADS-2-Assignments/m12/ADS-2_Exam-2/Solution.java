@@ -13,7 +13,7 @@ public class Solution {
             String[] eValues = sc.nextLine().split(" ");
             ewGraph.addEdge(new Edge(Integer.parseInt(eValues[0]),
             						 Integer.parseInt(eValues[1]),
-                					 Integer.parseInt(eValues[2])));
+                					 Double.parseDouble(eValues[2])));
         }
 		String caseToGo = sc.nextLine();
 		switch (caseToGo) {
