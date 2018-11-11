@@ -1,10 +1,20 @@
 import java.util.Scanner;
 import java.util.HashMap;
-
+/**
+ * class for solution.
+ */
 public final class Solution {
-    Solution() {
-        
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // Blank constructor.
     }
+    /**
+     * Main method to perform operations.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] inputs = sc.nextLine().split(" ");
