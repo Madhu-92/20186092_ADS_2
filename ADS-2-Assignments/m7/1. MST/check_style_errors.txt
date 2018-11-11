@@ -1,26 +1,14 @@
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m7\1. MST\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m7\1. MST\MinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m7\1. MST\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
