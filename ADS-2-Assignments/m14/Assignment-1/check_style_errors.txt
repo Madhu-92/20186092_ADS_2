@@ -1,8 +1,7 @@
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m14\Assignment-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m14\Assignment-1\Solution.java:35:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -3,21 +3,21 @@ import java.util.Scanner;
  * Class for solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//Blank constructor
-	}
-	/**
-	 * main method to perform operations.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		String[] words = loadWords();
-		//Your code goes here...
-		TST<Integer> tst = new TST<Integer>();
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Blank constructor
+    }
+    /**
+     * main method to perform operations.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        String[] words = loadWords();
+        //Your code goes here...
+        TST<Integer> tst = new TST<Integer>();
         Scanner sc = new Scanner(System.in);
         String prefix = sc.nextLine();
         int j = 0;
@@ -30,11 +30,15 @@ public final class Solution {
         for (String each : tst.keysWithPrefix(prefix)) {
             System.out.println(each);
         }
-	}
-
-	public static String[] loadWords() {
-		In in = new In("/Files/dictionary-algs4.txt");
-		String[] words = in.readAllStrings();
-		return words;
-	}
+    }
+/**
+ * Loads words.
+ *
+ * @return     words.
+ */
+    public static String[] loadWords() {
+        In in = new In("/Files/dictionary-algs4.txt");
+        String[] words = in.readAllStrings();
+        return words;
+    }
 }
