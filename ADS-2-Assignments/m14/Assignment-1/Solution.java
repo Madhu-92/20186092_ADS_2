@@ -1,7 +1,20 @@
 import java.util.Scanner;
-
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//Blank constructor
+	}
+	/**
+	 * main method to perform operations.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		String[] words = loadWords();
 		//Your code goes here...
 		TST<Integer> tst = new TST<Integer>();
