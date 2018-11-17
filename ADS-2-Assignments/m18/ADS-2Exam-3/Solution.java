@@ -140,8 +140,12 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    T9(final BinarySearchST<String, Integer> st) {
+    TST trie = new TST();
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
+        for(String key : st.keys()){
+            trie.put(key, st.get(key));
+        }
     }
     // get all the prefixes that match with given prefix.
 
@@ -150,11 +154,12 @@ class T9 {
      *
      * @param      prefix  The prefix
      *
-     * @return     All words.
+     * @return     keys that matches the prefix.
      */
     public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
-        return null;
+        Iterable<String> keys = trie.keysWithPrefix(prefix);
+        return keys;
     }
 
     /**
