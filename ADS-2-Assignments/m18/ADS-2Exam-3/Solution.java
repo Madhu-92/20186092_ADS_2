@@ -47,8 +47,8 @@ public final class Solution {
             int count = 0;
             while (scan.hasNextLine()) {
                 String t9Signature = scan.nextLine();
-                for (String each :
-                          t9.potentialWords(t9Signature)) {
+                for (String each
+                         : t9.potentialWords(t9Signature)) {
                     count++;
                     System.out.println(each);
                 }
@@ -179,7 +179,8 @@ class T9 {
      *
      * @return     The suggestions.
      */
-    public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,
+                                                          final int k) {
         // your code goes here
         return null;
     }
@@ -194,7 +195,7 @@ class T9 {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<String> t9(final String t9Signature, int k) {
+    public Iterable<String> t9(final String t9Signature, final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
