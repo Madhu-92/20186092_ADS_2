@@ -376,21 +376,12 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:25: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:49: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:116: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:141:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:141:19: Parameter st should be final. [FinalParameters]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:153:45: Parameter prefix should be final. [FinalParameters]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:165:48: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:180:48: Parameter words should be final. [FinalParameters]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:180:72: Parameter k should be final. [FinalParameters]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:187: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:188: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:196:62: Parameter k should be final. [FinalParameters]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:50:34: ':' should be on a new line. [OperatorWrap]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:143:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:182: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\Solution.java:197:58: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
