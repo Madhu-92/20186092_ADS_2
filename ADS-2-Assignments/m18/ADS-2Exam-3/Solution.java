@@ -136,14 +136,17 @@ public final class Solution {
  */
 class T9 {
     /**
+     * trie object. 
+     */
+    private TST trie = new TST();
+    /**
      * Constructs the object.
      *
      * @param      st    { parameter_description }
      */
-    TST trie = new TST();
     protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
-        for(String key : st.keys()){
+        for (String key : st.keys()) {
             trie.put(key, st.get(key));
         }
     }
