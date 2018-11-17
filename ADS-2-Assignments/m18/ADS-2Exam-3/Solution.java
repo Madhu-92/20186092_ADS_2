@@ -136,7 +136,7 @@ public final class Solution {
  */
 class T9 {
     /**
-     * trie object. 
+     * trie object.
      */
     private TST trie = new TST();
     /**
