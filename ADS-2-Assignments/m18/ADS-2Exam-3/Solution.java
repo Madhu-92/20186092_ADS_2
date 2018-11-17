@@ -1,10 +1,21 @@
 import java.util.Scanner;
-
-
-public class Solution {
-
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		// Blank constructor.
+	}
 	// Don't modify this method.
-	public static void main(String[] args) {
+	/**
+	 * main method to perform operations.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
@@ -80,13 +91,30 @@ public class Solution {
 	}
 
 	// Don't modify this method.
-	public static String[] toReadFile(String file) {
+
+	/**
+	 * toReadFile.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     return array of Strings.
+	 */
+	public static String[] toReadFile(final String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
 
-	public static BinarySearchST<String, Integer> loadDictionary(String file) {
-		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     st, i.e each word count.
+	 */
+	public static BinarySearchST<String, Integer>
+	                      loadDictionary(final String file) {
+		BinarySearchST<String, Integer>  st = 
+		               new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] allWords = toReadFile(file);
 		for (int i = 0; i < allWords.length; i++) {
@@ -101,25 +129,54 @@ public class Solution {
 	}
 
 }
-
+/**
+ * Class for t 9.
+ */
 class T9 {
-
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      st    { parameter_description }
+	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 	}
-
 	// get all the prefixes that match with given prefix.
+
+	/**
+	 * Gets all words.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		return null;
 	}
 
+	/**
+	 * potential words.
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
+
+	/**
+	 * Gets the suggestions.
+	 *
+	 * @param      words  The words
+	 * @param      k      { parameter_description }
+	 *
+	 * @return     The suggestions.
+	 */
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
 		return null;
@@ -127,7 +184,16 @@ class T9 {
 
 	// final output
 	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
+	
+	/**
+	 * { function_description }
+	 *
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Iterable<String> t9(final String t9Signature, int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
