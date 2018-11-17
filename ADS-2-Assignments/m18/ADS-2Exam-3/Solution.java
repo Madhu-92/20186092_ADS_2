@@ -140,7 +140,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
     }
     // get all the prefixes that match with given prefix.
