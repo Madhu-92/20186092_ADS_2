@@ -90,7 +90,7 @@ public class Solution {
 		// your code goes here
 		String[] allWords = toReadFile(file);
 		for (int i = 0; i < allWords.length; i++) {
-			String word = allWords[i];
+			String word = allWords[i].toLowerCase();
 			if (!st.contains(word)) {
 				st.put(word, 1);
 			} else {
