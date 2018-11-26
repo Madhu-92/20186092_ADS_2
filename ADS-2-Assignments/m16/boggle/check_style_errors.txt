@@ -560,9 +560,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
@@ -744,14 +742,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:6: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:29: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:45: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\Solution.java:44:50: ':' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\GIT\ADS-2\20186092_ADS_2\ADS-2-Assignments\m16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
