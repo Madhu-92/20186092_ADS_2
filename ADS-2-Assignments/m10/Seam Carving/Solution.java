@@ -1,11 +1,26 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        // Blank constructor.
+    }
 
-    public static void printEnergies(String fileName) {
+    /**
+     * printenergies.
+     *
+     * @param      fileName  The file name
+     */
+    public static void printEnergies(final String fileName) {
         Picture picture = new Picture(fileName);
-        StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
+        StdOut.printf("image is %d pixels wide by %d pixels high.\n",
+                       picture.width(), picture.height());
 
         SeamCarver sc = new SeamCarver(picture);
 
@@ -18,7 +33,16 @@ public class Solution {
         }
     }
 
-    public static void printSeam(SeamCarver carver, int[] seam, boolean direction) {
+    /**
+     * printseam.
+     *
+     * @param      carver     The carver
+     * @param      seam       The seam
+     * @param      direction  The direction
+     */
+    public static void printSeam(final SeamCarver carver,
+                                 final int[] seam, 
+                                 final boolean direction) {
         double totalSeamEnergy = 0.0;
 
         for (int row = 0; row < carver.height(); row++) {
@@ -39,55 +63,59 @@ public class Solution {
         StdOut.println();
         StdOut.println();
     }
-
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String cases = scan.nextLine();
+    /**
+     * main method to perform operations.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String cases = sc.nextLine();
         SeamCarver seamCarver = null;
         try {
             switch (cases) {
             case "width":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     System.out.println(seamCarver.width());
                 }
                 break;
 
             case "height":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     System.out.println(seamCarver.height());
                 }
                 break;
 
             case "energy":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     printEnergies("/Files/" + file);
                 }
                 break;
 
             case "findVerticalSeam":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     System.out.println(Arrays.toString(seamCarver.findVerticalSeam()));
                 }
                 break;
 
             case "findHorizontalSeam":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     System.out.println(Arrays.toString(seamCarver.findHorizontalSeam()));
                 }
                 break;
 
             case "removeVerticalSeam":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     int[] verticalSeam = seamCarver.findVerticalSeam();
                     seamCarver.removeVerticalSeam(verticalSeam);
@@ -96,8 +124,8 @@ public class Solution {
                 break;
 
             case "removeHorizontalSeam":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     seamCarver.removeHorizontalSeam(seamCarver.findHorizontalSeam());
                     int[] horizontalSeam = seamCarver.findHorizontalSeam();
@@ -107,8 +135,8 @@ public class Solution {
                 break;
 
             case "removeHorizontalSeam removeVerticalSeam":
-                while (scan.hasNextLine()) {
-                    String file = scan.nextLine();
+                while (sc.hasNextLine()) {
+                    String file = sc.nextLine();
                     seamCarver = new SeamCarver(new Picture("/Files/" + file));
                     int[] horizontalSeam = seamCarver.findHorizontalSeam();
                     seamCarver.removeHorizontalSeam(horizontalSeam);
